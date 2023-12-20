@@ -1,0 +1,276 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+}
+
+header {
+    background-color: #21854e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 130px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.form {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+form * {
+    margin: 0 10px;
+}
+
+form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 8px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Add any other styles you need for the rest of your page */
+
+
+.form-signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.form-signup * {
+    margin: 10px;
+    width: 50vw;
+}
+
+.form-title {
+    margin: 40px;
+}
+
+p.error {
+    color: red;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+p.success {
+    color: green;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+select.choix {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerx {
+    width: 97%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerx .product,
+.container .product {
+    width: calc(33.33% - 60px);
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container .product:hover {
+    transform: scale(1.05);
+}
+
+.container .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .product:hover img {
+    transform: scale(1.1);
+}
+
+.container .product .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container .product .price {
+    font-size: 16px;
+    color: #007bff;
+    /* Change color as needed */
+    margin-top: 5px;
+}
+
+.left {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background: var(--blue);
+    border-left: 10px solid var(--blue);
+    transition: 0.5s;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.main {
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.details {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.details .box {
+    position: relative;
+    display: flex;
+    min-height: 500px;
+    background: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.pb-1 {
+    padding: 1rem;
+}
+
+
+
+.container .products {
+    width: calc(33.33% - 60px);
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.container .products:hover {
+    transform: scale(1.05);
+}
+
+.container .products img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .products:hover img {
+    transform: scale(1.1);
+}
+
+.container .products .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container .products .price {
+    font-size: 16px;
+    color: #007bff;
+    /* Change color as needed */
+    margin-top: 5px;
+}
+
+.cart-shopping {
+    cursor: pointer;
+}
